@@ -25,8 +25,5 @@ $ make -j 8
 
 #### sampling
 
-```
-$ ./stippling -in ../data/julia.png
-```
 ![stippling](https://raw.githubusercontent.com/ggael/otmap/master/data/sampling_julia.png "stippling")
 
