@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -9,7 +9,7 @@
 #include <Eigen/Core>
 using namespace Eigen;
 
-namespace otmap {
+namespace monge {
 
 void nestdiss_ordering_impl(int i0, int j0, int rows, int cols, int stride, int* &perm)
 {
@@ -60,4 +60,4 @@ void nestdiss_ordering(int size, int* perm)
   VectorXi::Map(perm,size*size).reverseInPlace();
 }
 
-} // namespace otmap
+} // namespace monge

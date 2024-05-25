@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -18,7 +18,7 @@
 
 bool load_input_density(const std::string& filename, Eigen::MatrixXd& density);
 
-void generate_transport_maps(const std::vector<std::string>& inputs, std::vector<otmap::TransportMap>& tmaps, const CLI_OTSolverOptions& opts,
+void generate_transport_maps(const std::vector<std::string>& inputs, std::vector<monge::TransportMap>& tmaps, const CLI_OTSolverOptions& opts,
                              std::function<void(Eigen::MatrixXd&)> filter = [](Eigen::MatrixXd&){});
 
 void synthetize_and_export_image(const surface_mesh::Surface_mesh& map, int img_res, const Eigen::VectorXd& target, const std::string base_filename, const Eigen::VectorXd& input_density = Eigen::VectorXd(0), double gamma = 1);

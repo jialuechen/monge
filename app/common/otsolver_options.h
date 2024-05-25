@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 // Copyright (C) 2017 Georges Nader
@@ -15,7 +15,7 @@
 // helps managing common CLIoptions
 struct CLI_OTSolverOptions
 {
-  otmap::SolverOptions solver_opt;
+  monge::SolverOptions solver_opt;
   int verbose_level;
 
   CLI_OTSolverOptions()
@@ -48,9 +48,9 @@ struct CLI_OTSolverOptions
     if(args.getCmdOption("-beta",value))
     {
       if(value[0]=="zero" || value[0]=="0")
-        solver_opt.beta = otmap::BetaOpt::Zero;
+        solver_opt.beta = monge::BetaOpt::Zero;
       else if(value[0]=="cj")
-        solver_opt.beta = otmap::BetaOpt::ConjugateJacobian;
+        solver_opt.beta = monge::BetaOpt::ConjugateJacobian;
       else
       {
         std::cerr << "!! Invalid beta option: " << value[0]  << ", fallback to \"Auto\" \n";

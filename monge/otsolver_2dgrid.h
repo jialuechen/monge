@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 // Copyright (C) 2017 Georges Nader
@@ -28,7 +28,7 @@
 #include "surface_mesh/Surface_mesh.h"
 #include "transport_map.h"
 
-namespace otmap {
+namespace monge {
 
 enum struct BetaOpt {
   Zero, ConjugateJacobian
@@ -124,4 +124,4 @@ protected:
   mutable Eigen::MatrixX2d m_cache_1D_gd;
 };
 
-} // namespace otmap
+} // namespace monge

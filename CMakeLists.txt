@@ -1,4 +1,4 @@
-project(otmap)
+project(monge)
 
 cmake_minimum_required(VERSION 3.2.0)
 
@@ -120,8 +120,8 @@ set(OTAPPUTILS_HEADER_FILES
 
 add_library(otapputils ${OTAPPUTILS_SRC_FILES})
 
-add_executable(otmap apps/otmap)
-target_link_libraries(otmap otapputils monge ${ALLLIBS})
+add_executable(monge apps/monge)
+target_link_libraries(monge otapputils monge ${ALLLIBS})
 
 add_executable(stippling apps/stippling.cpp)
 target_link_libraries(stippling otapputils monge ${ALLLIBS})

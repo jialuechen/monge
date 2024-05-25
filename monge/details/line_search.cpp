@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -12,7 +12,7 @@
 
 using namespace Eigen;
 
-namespace otmap {
+namespace monge {
 
 void QuadraticLineSearch::init() {
   m_verbose_level = 0;
@@ -186,4 +186,4 @@ operator()(Ref<const VectorXd> xk, Ref<const VectorXd> dir,
   return rmid;
 }
 
-} // namespace otmap
+} // namespace monge

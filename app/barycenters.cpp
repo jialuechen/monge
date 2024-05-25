@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 // Copyright (C) 2017 Georges Nader
@@ -20,7 +20,7 @@
 
 using namespace Eigen;
 using namespace surface_mesh;
-using namespace otmap;
+using namespace monge;
 
 void output_usage()
 {

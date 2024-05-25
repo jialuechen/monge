@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -8,7 +8,7 @@
 
 #pragma once
 
-namespace otmap {
+namespace monge {
 
 void nestdiss_ordering(int size, int* perm);
 

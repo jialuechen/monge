@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -15,7 +15,7 @@
 
 using namespace Eigen;
 using namespace surface_mesh;
-using namespace otmap;
+using namespace monge;
 
 bool load_input_density(const std::string& filename, MatrixXd& density)
 {

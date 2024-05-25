@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -13,7 +13,7 @@
 
 #include "eigen_addons.h"
 
-namespace otmap {
+namespace monge {
   
 inline Eigen::Vector2d bilinear_coordinates_in_triangle(const Eigen::Vector2d& q, const Eigen::Vector2d& p0, const Eigen::Vector2d& p1, const Eigen::Vector2d& p2)
 {
@@ -35,5 +35,5 @@ void generate_quad_mesh(int m, int n, surface_mesh::Surface_mesh& mesh, bool inc
 // removes faces having a zero density
 void prune_empty_faces(surface_mesh::Surface_mesh &mesh, Eigen::VectorXd density);
 
-} // namespace otmap
+} // namespace monge
 

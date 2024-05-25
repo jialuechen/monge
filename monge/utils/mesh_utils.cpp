@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -12,7 +12,7 @@
 using namespace Eigen;
 using namespace surface_mesh;
 
-namespace otmap {
+namespace monge {
 
 // works for any quads, but q must be inside the quad
 bool bilinear_coordinates_in_quad(const Eigen::Vector2d& q, const Eigen::Vector2d *p, double &u, double &v)

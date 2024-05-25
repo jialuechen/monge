@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -23,7 +23,7 @@
 using namespace Eigen;
 using namespace surface_mesh;
 
-namespace otmap
+namespace monge
 {
 
 
@@ -103,7 +103,7 @@ Eigen::Vector2d TransportMap::inv_impl(const Eigen::Vector2d& p_in,bool fast_mod
 
 
 void
-apply_inverse_map(const otmap::TransportMap& tmap, std::vector<Vector2d> &points, int verbose_level)
+apply_inverse_map(const monge::TransportMap& tmap, std::vector<Vector2d> &points, int verbose_level)
 {
   BenchTimer timer;
 

@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -10,7 +10,7 @@
 
 #include <Eigen/Core>
 
-namespace otmap {
+namespace monge {
 
 typedef std::function<double(Eigen::Ref<const Eigen::VectorXd>,Eigen::Ref<Eigen::VectorXd>)> ResidualFunction;
 
@@ -57,4 +57,4 @@ protected:
   int m_verbose_level;
 };
 
-} // namespace otmap
+} // namespace monge

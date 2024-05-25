@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -21,7 +21,7 @@
 #include "surface_mesh/Surface_mesh.h"
 #include <memory>
 
-namespace otmap
+namespace monge
 {
 
 class BVH2D;
@@ -63,10 +63,10 @@ protected:
 };
 
 /** Inverts uniform mesh relative to a transport map */
-void apply_inverse_map( const otmap::TransportMap& tmap,
+void apply_inverse_map( const monge::TransportMap& tmap,
                         std::vector<Eigen::Vector2d> &points, /* in-out */
                         int verbose_level = 2);
 
 double transport_cost(const surface_mesh::Surface_mesh &src_mesh, const surface_mesh::Surface_mesh &dst_mesh, const Eigen::VectorXd &density_per_face, Eigen::VectorXd *cost_per_face = 0);
 
-} // namespace otmap
+} // namespace monge

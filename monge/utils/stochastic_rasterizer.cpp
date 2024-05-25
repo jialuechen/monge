@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2016-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -14,7 +14,7 @@
 using namespace surface_mesh;
 using namespace Eigen;
 
-namespace otmap {
+namespace monge {
 
 void sample_transportmap_to_image(const Surface_mesh &mesh, const VectorXi &sample_per_face, MatrixXd& img)
 {
@@ -92,4 +92,4 @@ void sample_transportmap_to_image(const surface_mesh::Surface_mesh& mesh, Eigen:
   sample_transportmap_to_image(mesh, Eigen::VectorXi::Constant(mesh.faces_size(), sample_per_face), img);
 }
 
-} // namespace otmap
+} // namespace monge

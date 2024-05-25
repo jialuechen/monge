@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -11,7 +11,7 @@
 #include <Eigen/Core>
 #include <surface_mesh/Surface_mesh.h>
 
-namespace otmap {
+namespace monge {
 
 enum RasterImageOption {
   RIO_PerVertexDensity,
@@ -21,4 +21,4 @@ enum RasterImageOption {
 void rasterize_image(const surface_mesh::Surface_mesh& mesh, const Eigen::VectorXd &density_per_Face, Eigen::MatrixXd& img, RasterImageOption opt = RIO_PerFaceDensity);
 void rasterize_image(const surface_mesh::Surface_mesh& mesh, Eigen::MatrixXd& img, RasterImageOption opt = RIO_PerFaceDensity);
 
-} // namespace otmap
+} // namespace monge

@@ -32,7 +32,7 @@
 using namespace Eigen;
 using namespace surface_mesh;
 
-namespace otmap {
+namespace monge {
 
 struct BarycentricTransform
 {
@@ -307,4 +307,4 @@ void rasterize_image(const surface_mesh::Surface_mesh& mesh, MatrixXd& img, Rast
   rasterize_image(mesh, VectorXd::Ones(mesh.faces_size()), img, opt);
 }
 
-} // namespace otmap
+} // namespace monge

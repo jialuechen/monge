@@ -23,6 +23,6 @@ $ make -j 8
 
 #### sampling
 <div align=center>
-<img src="data/sampling_julia.png" width="30%" loc>
+<img src="data/example.png" width="30%" loc>
 </div>
 

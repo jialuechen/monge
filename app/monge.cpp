@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2017-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 // Copyright (C) 2017 Georges Nader
@@ -22,7 +22,7 @@
 
 using namespace Eigen;
 using namespace surface_mesh;
-using namespace otmap;
+using namespace monge;
 
 // helps managing CLIoptions ======================================
 struct CLIopts : CLI_OTSolverOptions
@@ -69,7 +69,7 @@ struct CLIopts : CLI_OTSolverOptions
 // outputs the usage =================================================
 void output_usage()
 {
-  std::cout << "usage: otmap -in <inputs> <option> <value>" << std::endl;
+  std::cout << "usage: monge -in <inputs> <option> <value>" << std::endl;
 
   std::cout << "input options:" << std::endl;
   std::cout << " * -in input0 [input1] where input* is either a <filename> or a procedural func \":id:res:\"" << std::endl;

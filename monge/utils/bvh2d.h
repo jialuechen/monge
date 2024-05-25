@@ -1,4 +1,4 @@
-// This file is part of otmap, an optimal transport solver.
+// This file is part of monge, an optimal transport solver.
 //
 // Copyright (C) 2016-2018 Gael Guennebaud <gael.guennebaud@inria.fr>
 //
@@ -11,7 +11,7 @@
 #include <Eigen/Geometry>
 #include <surface_mesh/Surface_mesh.h>
 
-namespace otmap
+namespace monge
 {
 
 // Acceleration data-structure to query the triangle face of a mesh containing a given point q,
